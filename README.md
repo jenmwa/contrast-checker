@@ -1,3 +1,3 @@
 # contrast-checker
 
-javascript
+vite & javascript
