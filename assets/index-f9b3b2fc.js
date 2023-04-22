@@ -4,7 +4,6 @@
     <p>Choose your color:</p>
     <input type="color" id="userColor"><br>
       <button id="colorBtn" type="button">CHECK COLOR</button>
-      <div class="choosen-color" id="choosenColor"></div>
     <div class="light-dark-div">
       <div class="textdiv textdiv-light">
         <p class="dark-text">DARK TEXT</p>
@@ -13,6 +12,7 @@
         <p class="light-text">WHITE TEXT</p>
       </div>
     </div>
+    <div class="choosen-color" id="choosenColor"></div>
     <div class="result-color" id="resultColor"></div>
   </div>
 `;const i=document.querySelector("#colorBtn"),u=document.querySelector("#choosenColor"),n=document.querySelector("#resultColor");function d(e){console.log(e);const t=a(e),s=(.299*t.r+.587*t.g+.114*t.b)/255;console.log(s),g(s)}function a(e){console.log(e),e=e.replace("#",""),console.log(e);const t=parseInt(e.substring(0,2),16),s=parseInt(e.substring(2,4),16),l=parseInt(e.substring(4,6),16);return console.log(t,s,l),console.log({r:t,g:s,b:l}),{r:t,g:s,b:l}}function g(e){console.log(e),e>.5?(console.log("text is better black"),n.innerText="text is better dark"):(console.log("text should be light"),n.innerText="text should be light")}i.addEventListener("click",()=>{const e=document.querySelector("#userColor").value;console.log(e),u.innerText=`You choosed the color ${e}`,document.querySelectorAll(".textdiv").forEach(s=>{s.style.backgroundColor=e}),d(e)});
