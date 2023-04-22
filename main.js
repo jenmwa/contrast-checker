@@ -6,7 +6,6 @@ document.querySelector('#app').innerHTML = `
     <p>Choose your color:</p>
     <input type="color" id="userColor"><br>
       <button id="colorBtn" type="button">CHECK COLOR</button>
-      <div class="choosen-color" id="choosenColor"></div>
     <div class="light-dark-div">
       <div class="textdiv textdiv-light">
         <p class="dark-text">DARK TEXT</p>
@@ -15,6 +14,7 @@ document.querySelector('#app').innerHTML = `
         <p class="light-text">WHITE TEXT</p>
       </div>
     </div>
+    <div class="choosen-color" id="choosenColor"></div>
     <div class="result-color" id="resultColor"></div>
   </div>
 `
