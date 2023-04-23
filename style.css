@@ -50,7 +50,8 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: whitesmoke;
+  color: #1b1b1b;
   cursor: pointer;
   transition: border-color 0.25s;
   margin-top: 1rem;;
@@ -69,23 +70,25 @@ button:focus-visible {
 
 .light-dark-div {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top: 2rem;
+  margin-inline: 0;
 }
 
 .textdiv {
   font-weight: bold;
 }
+
 .textdiv-light {
   background-color: whitesmoke;
   padding: 2rem;
-  border-radius: 15px;;
+  border-radius: 15px;
 }
 
 .textdiv-dark {
   background-color: #1a1a1a;
   padding: 2rem;
-  border-radius: 15px;;
+  border-radius: 15px;
 }
 
 .dark-text {
@@ -100,7 +103,7 @@ button:focus-visible {
 }
 
 
-/* @media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
@@ -111,4 +114,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-} */
+}
