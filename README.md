@@ -17,8 +17,7 @@ to calculate this we have this forumla:
     L = 0.2126 * R + 0.7152 * G + 0.0722 * B
 ```
 from hex to RGB we have to get the red, green, blue.<br>
-2 first digits in a hex-color represent red, the 2 in the middle green, and the last 2 represent blue, så we have to<br>
-we also have to convert hexadecimal to integer, and that's it!<br>
+2 first digits in a hex-color represent red, the 2 in the middle green, and the last 2 represent blue, så we have to take these digits out and we also have to convert hexadecimal to integer!<br>
 
 when we have converted hex to rgb we can continue calculate the luminance, and if the luminance is > 0.5, we should use dark colored text on that particular background, since it's more white (1) than black (0), or else, we should use light colored text, since background is more to 0, in other words, white.
 
