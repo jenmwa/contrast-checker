@@ -53,11 +53,11 @@ function hexToRgb(hex) {
 function calculateContrast(luminance){
 console.log(luminance);
   if(luminance > 0.5) {
-    console.log('text is better black');
-    resultColorHtml.innerText= "text is better dark";
+    console.log('text is better dark');
+    resultColorHtml.innerText= "If this is your background color, Your text should be dark";
   } else {
     console.log('text should be light');
-    resultColorHtml.innerText = "text should be light";
+    resultColorHtml.innerText = "If this is your background color, the text should be light";
   }
 
 }
